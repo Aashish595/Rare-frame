@@ -40,23 +40,18 @@ export default function AboutContact() {
             <div className="relative rounded-xl p-10">
               {/* Section Header */}
               <div className="mb-10">
-                <span className="text-2xl tracking-widest uppercase  text-gray-500">
+                <span className="text-2xl tracking-widest uppercase  text-gray-300">
                   About
                 </span>
 
-                <div className="flex items-center gap-4 mt-3">
-                 
-                  
-                </div>
+                <div className="flex items-center gap-4 mt-3"></div>
               </div>
 
               <div className="flex gap-6">
-                {/* Vertical Accent Line */}
-                <div className="w-px bg-linear-to-b from-red-500/60 to-transparent" />
-
                 <div className="space-y-6 max-w-md">
                   <p className="text-lg text-gray-100">
-                   High-end compositing and flawless shot finishing, crafted frame by frame.
+                    High-end compositing and shot finishing, crafted
+                    frame by frame.
                   </p>
 
                   <p className="text-white/70 leading-relaxed">
@@ -66,7 +61,7 @@ export default function AboutContact() {
 
                   <p className="text-white/60 leading-relaxed">
                     Our carefully curated team focuses on visual continuity,
-                    disciplined workflows, and close creative oversight —
+                    disciplined workflows, and close creative oversight
                     ensuring imagery that feels grounded, intentional, and real.
                   </p>
                 </div>
@@ -86,9 +81,10 @@ export default function AboutContact() {
             <div className="relative rounded-xl p-10">
               {/* Section Header */}
               <div className="mb-8">
-                <div className="flex items-center gap-4 mt-3">
-               
-                  <h2 className="text-2xl text-gray-300 tracking-wide">CONTACT</h2>
+                <div className="flex items-center gap-4 ">
+                  <h2 className="text-2xl text-gray-300 tracking-wide">
+                    CONTACT
+                  </h2>
                 </div>
               </div>
 
@@ -117,7 +113,7 @@ export default function AboutContact() {
 
                 <button
                   disabled={status === "sending"}
-                  className="border border-white px-6 py-2 hover:bg-white hover:text-black transition disabled:opacity-50"
+                  className="border border-white px-6 py-2 hover:bg-white  hover:text-black transition disabled:opacity-50"
                 >
                   {status === "sending" ? "Sending..." : "Send Message"}
                 </button>

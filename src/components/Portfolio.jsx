@@ -2,20 +2,20 @@
 
 import FadeIn from "./FadeIn";
 
-const GIFS = ["gif1.gif", "gif2.gif", "gif3.gif"];
+const GIFS = ["gif1.gif", "gif2.gif", "gif3.gif" , "gif4.gif", "gif5.gif", "gif6.gif"];
 
 export default function Portfolio() {
   return (
     <section
       id="portfolio"
-      className="bg-black pt-14 pb-20 px-8"
+      className="bg-black pt-14 pb-20 px-8 min-h-screen"
     >
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl  mx-auto">
         {/* PORTFOLIO HEADING */}
         <FadeIn>
-          <div className="mb-8 flex items-center gap-4">
+          <div className="mb-8 flex items-center justify-center gap-4">
         
-            <h2 className="text-2xl tracking-wide text-white">
+            <h2 className="text-4xl tracking-wide text-gray-300">
               PORTFOLIO
             </h2>
           </div>

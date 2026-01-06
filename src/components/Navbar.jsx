@@ -3,8 +3,6 @@
 import { useState } from "react";
 
 
-
-
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
@@ -26,7 +24,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-black/40 backdrop-blur-md">
-      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto  h-16 flex items-center justify-between">
         {/* LOGO */}
         <button
           onClick={scrollToTop}

@@ -5,10 +5,9 @@ export default function Footer() {
     <footer className="bg-black py-16 border-t border-white/10">
       <div className="max-w-7xl mx-auto px-6 flex flex-col items-center gap-6">
 
-        {/* LOGO / NAME */}
-        <div className="text-lg tracking-widest">
-          <span className="text-white">RARE</span>
-          <span className="text-red-600">FRAME</span>
+        {/* LOGO  */}
+        <div className=" tracking-widest">
+           <img src="/updatedLogo.png" alt="Rare frame"  className="h-6 w-auto object-contain"/>
         </div>
 
         {/* SOCIAL ICONS */}
@@ -21,13 +20,13 @@ export default function Footer() {
             <FaInstagram size={20} />
           </a>
 
-          <a
+          {/* <a
             href="https://youtube.com"
             target="_blank"
             className="text-white/60 hover:text-white transition"
           >
             <FaYoutube size={20} />
-          </a>
+          </a> */}
 
           <a
             href="https://www.linkedin.com/company/rareframe"
