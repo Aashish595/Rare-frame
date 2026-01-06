@@ -26,13 +26,22 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 w-full z-50 bg-black/40 backdrop-blur-md">
       <div className="max-w-7xl mx-auto  h-16 flex items-center justify-between">
         {/* LOGO */}
-        <button
-          onClick={scrollToTop}
-          className="flex items-center"
-        >
-         <img className="h-8 w-auto object-contain"
-          src="/updatedlogo.png" alt="RareFrame Logo" />
-        </button>
+       <button
+  onClick={scrollToTop}
+  className="group relative flex items-center"
+>
+  <img
+    className="h-8 w-auto object-contain"
+    src="/updatedlogo.png"
+    alt="RareFrame Logo"
+  />
+
+  {/* underline */}
+  <span
+    className="absolute left-1/2 -bottom-1 h-px w-0 bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"
+  />
+</button>
+
 
         {/* DESKTOP NAV */}
         <div className="hidden md:flex gap-8">
