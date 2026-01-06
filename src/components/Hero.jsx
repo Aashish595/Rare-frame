@@ -25,7 +25,7 @@ export default function Hero() {
           <div className="max-w-3xl">
             <h1
               className="
-          max-w-2xl mx-auto
+          max-w-5xl mx-auto
           text-[48px] md:text-[56px]
           font-semibold
           tracking-[-0.02em]

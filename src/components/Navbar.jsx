@@ -1,12 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { Orbitron } from "next/font/google";
 
-const logoFont = Orbitron({
-  subsets: ["latin"],
-  weight: ["500", "600", "700"],
-});
+
+
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -33,13 +30,10 @@ export default function Navbar() {
         {/* LOGO */}
         <button
           onClick={scrollToTop}
-          className={`group ${logoFont.className}`}
+          className="flex items-center"
         >
-          <span className="relative text-base tracking-widest font-semibold">
-            <span className="text-white">RARE</span>
-            <span className="text-red-500">FRAME</span>
-            <span className={underline} />
-          </span>
+         <img className="h-8 w-auto object-contain"
+          src="/updatedlogo.png" alt="RareFrame Logo" />
         </button>
 
         {/* DESKTOP NAV */}

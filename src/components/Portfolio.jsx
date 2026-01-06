@@ -14,15 +14,15 @@ export default function Portfolio() {
         {/* PORTFOLIO HEADING */}
         <FadeIn>
           <div className="mb-8 flex items-center gap-4">
-            <div className="w-10 h-px bg-gradient-to-r from-red-500/60 to-transparent" />
-            <h2 className="text-4xl font-serif tracking-wide text-white">
-              Portfolio
+        
+            <h2 className="text-2xl tracking-wide text-white">
+              PORTFOLIO
             </h2>
           </div>
         </FadeIn>
 
         {/* GRID */}
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-3 gap-2">
           {GIFS.map((gif, index) => (
             <FadeIn key={index}>
               <div className="group relative overflow-hidden rounded-xl cursor-pointer">

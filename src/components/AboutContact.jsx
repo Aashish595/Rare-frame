@@ -40,26 +40,23 @@ export default function AboutContact() {
             <div className="relative rounded-xl p-10">
               {/* Section Header */}
               <div className="mb-10">
-                <span className="text-xs tracking-widest uppercase text-white/40">
-                  About Studio
+                <span className="text-2xl tracking-widest uppercase  text-gray-500">
+                  About
                 </span>
 
                 <div className="flex items-center gap-4 mt-3">
-                  <div className="w-10 h-px bg-gradient-to-r from-red-500/70 to-transparent" />
-                  <h2 className="text-3xl font-serif tracking-wide">
-                    Precision-driven VFX for cinematic storytelling
-                  </h2>
+                 
+                  
                 </div>
               </div>
 
               <div className="flex gap-6">
                 {/* Vertical Accent Line */}
-                <div className="w-px bg-gradient-to-b from-red-500/60 to-transparent" />
+                <div className="w-px bg-linear-to-b from-red-500/60 to-transparent" />
 
                 <div className="space-y-6 max-w-md">
-                  <p className="text-lg text-white/90">
-                    <span className="text-red-400">High-end compositing</span>{" "}
-                    and flawless shot finishing — crafted frame by frame.
+                  <p className="text-lg text-gray-100">
+                   High-end compositing and flawless shot finishing, crafted frame by frame.
                   </p>
 
                   <p className="text-white/70 leading-relaxed">
@@ -90,8 +87,8 @@ export default function AboutContact() {
               {/* Section Header */}
               <div className="mb-8">
                 <div className="flex items-center gap-4 mt-3">
-                  <div className="w-10 h-px bg-linear-to-r from-red-500/50 to-transparent" />
-                  <h2 className="text-3xl font-serif tracking-wide">Contact</h2>
+               
+                  <h2 className="text-2xl text-gray-300 tracking-wide">CONTACT</h2>
                 </div>
               </div>
 
@@ -114,7 +111,7 @@ export default function AboutContact() {
                 <textarea
                   name="message"
                   required
-                  placeholder="Tell me about your project (timeline, budget, vision)"
+                  placeholder="Tell us about your project (timeline, budget, vision)"
                   className="w-full bg-black/40 border border-white/10 p-3 h-32 focus:outline-none focus:border-white focus:ring-1 focus:ring-white/20"
                 />
 
