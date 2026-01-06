@@ -32,7 +32,7 @@ export default function Navbar() {
 >
   <img
     className="h-8 w-auto object-contain"
-    src="/updatedlogo.png"
+    src="/updatedLogo.png"
     alt="RareFrame Logo"
   />
 
