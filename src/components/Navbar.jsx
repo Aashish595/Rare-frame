@@ -2,13 +2,23 @@
 
 import { useState } from "react";
 
-
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
+  const NAVBAR_HEIGHT = 64; // h-16
+
   const scrollTo = (id) => {
     setOpen(false);
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    const el = document.getElementById(id);
+    if (!el) return;
+
+    const y =
+      el.getBoundingClientRect().top + window.pageYOffset - NAVBAR_HEIGHT - 16;
+
+    window.scrollTo({
+      top: y,
+      behavior: "smooth",
+    });
   };
 
   const scrollToTop = () => {
@@ -26,22 +36,19 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 w-full z-50 bg-black/40 backdrop-blur-md">
       <div className="max-w-7xl mx-auto  h-16 flex items-center justify-between">
         {/* LOGO */}
-       <button
-  onClick={scrollToTop}
-  className="group relative flex items-center"
->
-  <img
-    className="h-8 w-auto object-contain"
-    src="/updatedLogo.png"
-    alt="RareFrame Logo"
-  />
+        <button
+          onClick={scrollToTop}
+          className="group relative flex items-center"
+        >
+          <img
+            className="h-8 w-auto object-contain"
+            src="/updatedLogo.png"
+            alt="RareFrame Logo"
+          />
 
-  {/* underline */}
-  <span
-    className="absolute left-1/2 -bottom-1 h-px w-0 bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"
-  />
-</button>
-
+          {/* underline */}
+          <span className="absolute left-1/2 -bottom-1 h-px w-0 bg-white transition-all duration-300 group-hover:w-full group-hover:left-0" />
+        </button>
 
         {/* DESKTOP NAV */}
         <div className="hidden md:flex gap-8">
@@ -82,7 +89,7 @@ export default function Navbar() {
         className={`md:hidden overflow-hidden transition-all duration-500
         ${open ? "max-h-64 opacity-100" : "max-h-0 opacity-0"}`}
       >
-        <div className="px-6 pb-6 pt-2 flex flex-col gap-4 bg-black/70 backdrop-blur-md">
+        <div className="px-6 pb-6 pt-4 flex flex-col gap-4 bg-black/70 backdrop-blur-md">
           {["portfolio", "about", "contact"].map((id) => (
             <button
               key={id}
