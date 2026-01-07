@@ -21,50 +21,53 @@ export default function Hero() {
 
       {/* CONTENT */}
       <div className="relative z-10 h-full flex items-center justify-center text-center px-6">
-        <FadeIn>
-          <div className="max-w-3xl">
-            {/* Line 1 */}
-            <h1
-              className="
-    whitespace-normal md:whitespace-nowrap
-    text-[30px] sm:text-[36px] md:text-[44px] lg:text-[52px]
-    font-semibold
-    tracking-[-0.02em]
-    leading-tight
-    text-gray-200
-    max-w-full
-  "
-            >
-              High-End Compositing & Shot Finishing
-            </h1>
+       <FadeIn>
+  <div className="w-full text-center">
+    {/* Line 1 – wider container */}
+    <h1
+      className="
+        mx-auto
+        max-w-6xl
+        whitespace-normal md:whitespace-nowrap
+        text-[30px] sm:text-[36px] md:text-[44px] lg:text-[52px]
+        font-semibold
+        tracking-[-0.02em]
+        leading-tight
+        text-gray-200
+      "
+    >
+      High-End Compositing & Shot Finishing
+    </h1>
 
-            {/* Line 2 */}
-            <p
-              className="
-                mt-4
-                text-[20px] md:text-[30px]
-                font-medium
-                text-gray-300
-              "
-            >
-              For films and commercials.
-            </p>
+    {/* Line 2 & 3 – keep narrow for elegance */}
+    <div className="max-w-3xl mx-auto">
+      <p
+        className="
+          mt-4
+          text-[20px] md:text-[30px]
+          font-medium
+          text-gray-300
+        "
+      >
+        For films and commercials.
+      </p>
 
-            {/* Line 3 */}
-            <p
-              className="
-                mt-2
-                text-[15px] md:text-[16px]
-                font-normal
-                text-gray-400
-                max-w-md
-                mx-auto
-              "
-            >
-              Cinematic visual effects built for real-world production.
-            </p>
-          </div>
-        </FadeIn>
+      <p
+        className="
+          mt-2
+          text-[15px] md:text-[16px]
+          font-normal
+          text-gray-400
+          max-w-md
+          mx-auto
+        "
+      >
+        Cinematic visual effects built for real-world production.
+      </p>
+    </div>
+  </div>
+</FadeIn>
+
       </div>
 
       {/* SCROLL */}
