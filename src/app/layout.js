@@ -3,7 +3,7 @@ import CursorGlow from "@/components/CursorGlow";
 import { inter } from "./fonts";
 
 export const metadata = {
-  title: "VFX Artist Portfolio",
+  title: "RAREFRAME",
   description: "Cinematic VFX & 3D Motion Artist",
 };
 
