@@ -4,7 +4,7 @@ import { inter } from "./fonts";
 
 export const metadata = {
   title: "RAREFRAME",
-  description: "Cinematic VFX & 3D Motion Artist",
+  description: "RareFrame delivers high-end compositing and shot finishing for films and commercials, with a focus on realism, continuity, and cinematic quality.",
 };
 
 export default function RootLayout({ children }) {
